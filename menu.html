@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Babette">
+  <link href="assets/custom-images/logo-trang.png" rel="icon">
+  <title>Viet-Thai Restaurante</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Rubik:400,500,700%7cShadows+Into+Light&display=swap">
+  <link rel="stylesheet" href="assets/css/libraries.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- =========================
+        Header
+    =========================== -->
+    <header id="header" class="header header-transparent header-layout1">
+      <nav class="navbar navbar-expand-lg sticky-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="/">
+            <img width="128" height="100" src="assets/custom-images/logo-trang.png" class="logo-light" alt="logo" />
+            <img width="128" height="100" src="assets/custom-images/Logo.png" class="logo-dark" alt="logo" />
+          </a>
+          <button class="navbar-toggler" type="button" aria-label="line">
+            <span class="menu-lines"><span></span></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavigation">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav__item with-dropdown">
+                <a href="/" class="dropdown-toggle nav__item-link">Home</a>
+              </li>
+              <!-- /.nav-item -->
+              <li class="nav__item with-dropdown">
+                <a href="/our-story.html" class="dropdown-toggle nav__item-link">About</a>
+              </li>
+              <!-- /.nav-item -->
+              <li class="nav__item with-dropdown">
+                <a href="/menu.html" class="dropdown-toggle nav__item-link active">Menu</a>
+              </li>
+              <!-- /.nav-item -->
+              <li class="nav__item with-dropdown">
+                <a href="/contacts.html" class="dropdown-toggle nav__item-link">Contact Us</a>
+              </li>
+              <!-- /.nav-item -->
+              <li class="nav__item with-dropdown">
+                <a href="/faqs.html" class="dropdown-toggle nav__item-link">FAQs</a>
+              </li>
+            </ul>
+            <!-- /.navbar-nav -->
+          </div>
+          <!-- /.navbar-collapse -->
+          <div class="navbar-actions-wrap">
+            <div class="navbar-actions d-flex align-items-center">
+              <!-- <a href="#" class="navbar__action-btn search-popup-trigger" aria-label="search"><i
+                  class="fa fa-search"></i></a> -->
+              <!-- <a href="reservation.html"
+                class="navbar__action-btn navbar__action-btn-reserve btn btn__primary">Reservation</a> -->
+              <ul class="social__icons">
+                <li>
+                  <a href="https://www.facebook.com/VietThaiRestaurante" target="_blank" aria-label="fb"><i
+                      class="fa fa-facebook"></i></a>
+                </li>
+              </ul>
+              <!-- /.social__icons -->
+            </div>
+            <!-- /.navbar-actions -->
+          </div>
+          <!-- /.navbar-actions-wrap -->
+        </div>
+        <!-- /.container -->
+      </nav>
+      <!-- /.navabr -->
+    </header>
+    <!-- /.Header -->
+
+    <!-- ========================
+       page title 
+    =========================== -->
+    <section id="page-title" class="page-title page-title-layout3 text-center bg-overlay bg-overlay-2 bg-parallax">
+      <div class="bg-img"><img src="assets/custom-images/7.png" alt="background"></div>
+      <svg class="pagetitle__divider-shape" xmlns="http://www.w3.org/2000/svg" width="22" height="61"
+        viewBox="0 0 22 61">
+        <path
+          d="M799,769h2v61h-2V769Zm8,24.8a0.969,0.969,0,0,0-1.911,0,3.012,3.012,0,0,1-.883,2.16,4.486,4.486,0,0,0,0,6.136,3.083,3.083,0,0,1,0,4.32,4.486,4.486,0,0,0,0,6.136,3.088,3.088,0,0,1,0,4.325,4.5,4.5,0,0,0,0,6.142,3.014,3.014,0,0,1,.884,2.163,0.969,0.969,0,0,0,1.911,0,4.414,4.414,0,0,0-1.213-3.07,3.091,3.091,0,0,1,0-4.328,4.491,4.491,0,0,0,0-6.14,3.08,3.08,0,0,1,0-4.319,4.488,4.488,0,0,0,0-6.137,3.081,3.081,0,0,1,0-4.32A4.407,4.407,0,0,0,807,793.8Zm0-20a0.969,0.969,0,0,0-1.911,0,3.014,3.014,0,0,1-.883,2.16,4.486,4.486,0,0,0,0,6.136,3.083,3.083,0,0,1,0,4.32,4.488,4.488,0,0,0,0,6.137,3.087,3.087,0,0,1,0,4.324,4.5,4.5,0,0,0,0,6.142,3.014,3.014,0,0,1,.884,2.163,0.969,0.969,0,0,0,1.911,0,4.414,4.414,0,0,0-1.213-3.07,3.089,3.089,0,0,1,0-4.327,4.491,4.491,0,0,0,0-6.14,3.081,3.081,0,0,1,0-4.32,4.488,4.488,0,0,0,0-6.137,3.081,3.081,0,0,1,0-4.32A4.409,4.409,0,0,0,807,773.8ZM793,793.8a0.969,0.969,0,0,1,1.911,0,3.012,3.012,0,0,0,.883,2.16,4.486,4.486,0,0,1,0,6.136,3.083,3.083,0,0,0,0,4.32,4.486,4.486,0,0,1,0,6.136,3.088,3.088,0,0,0,0,4.325,4.5,4.5,0,0,1,0,6.142,3.014,3.014,0,0,0-.884,2.163,0.969,0.969,0,0,1-1.911,0,4.414,4.414,0,0,1,1.213-3.07,3.091,3.091,0,0,0,0-4.328,4.491,4.491,0,0,1,0-6.14,3.08,3.08,0,0,0,0-4.319,4.488,4.488,0,0,1,0-6.137,3.081,3.081,0,0,0,0-4.32A4.407,4.407,0,0,1,793,793.8Zm0-20a0.969,0.969,0,0,1,1.911,0,3.014,3.014,0,0,0,.883,2.16,4.486,4.486,0,0,1,0,6.136,3.083,3.083,0,0,0,0,4.32,4.488,4.488,0,0,1,0,6.137,3.087,3.087,0,0,0,0,4.324,4.5,4.5,0,0,1,0,6.142,3.014,3.014,0,0,0-.884,2.163,0.969,0.969,0,0,1-1.911,0,4.414,4.414,0,0,1,1.213-3.07,3.089,3.089,0,0,0,0-4.327,4.491,4.491,0,0,1,0-6.14,3.081,3.081,0,0,0,0-4.32,4.488,4.488,0,0,1,0-6.137,3.081,3.081,0,0,0,0-4.32A4.409,4.409,0,0,1,793,773.8Zm-4,5.2h2v41h-2V779Zm20,0h2v41h-2V779Z"
+          transform="translate(-789 -769)"></path>
+      </svg>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-10 offset-lg-1">
+            <span class="pagetitle__subheading">Discover</span>
+            <h1 class="pagetitle__heading">Our Menu</h1>
+          </div><!-- /.col-lg-8 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.page-title -->
+
+    <!-- ========================
+        Menu layout 3
+    =========================== -->
+    <section id="menulayout3" class="menu-layout3 pb-60">
+       <!-- Main course section -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+            <div class="heading text-center mb-30">
+              <span class="heading__subtitle">Taste The Best</span>
+              <h2 class="heading__title">Discover Our Menu</h2>
+              <div class="heading__icon">
+                <svg fill="#000000" height="28px" width="28px" version="1.1" id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 512.511 512.511" xml:space="preserve" stroke="2">
+                  <path
+                    d="M506.861,134.209c1.6-6,2.4-26-24-43.2c5.2-17.6,7.6-44.4-2.8-67.2c-0.8-2-3.2-2.8-5.2-2l-31.2,11.6 c-1.2,0.4-2,1.2-2.4,2.4c-0.4,1.2,0,2.4,0.4,3.6c6.4,9.2,16.4,26.8,16.8,44.4c-16.8-1.2-39.2,3.2-47.2,18 c-6.8,2.8-13.2,6.4-19.2,10.8c-23.6,17.2-33.2,54.4-44.8,97.6c-28,105.6-66.8,250.8-333.6,241.6c-9.2-0.4-13.2,4.8-13.6,10 c-0.8,8.4,6.4,18.4,15.2,20c34.8,6,68.8,9.2,101.6,9.2c104,0,197.2-30.4,269.6-89.2c76.4-62,123.6-151.2,126-238.8 C512.861,152.609,510.861,143.009,506.861,134.209z M462.461,92.209c1.2,0,2.4,0,3.2-0.8c0.8-0.8,1.2-1.6,1.6-2.8 c1.2-18.4-7.2-36.4-15.6-49.2l22.8-8.4c8.4,21.2,5.6,46,0.4,60.8c-0.8,1.6,0,3.6,1.6,4.8c20,12,23.2,25.2,23.6,32.4 c-4-1.6-8-2-12-2c-6.8,0-12,2-16.8,4c-6,2.4-11.2,4-16.8,1.2c-7.6-3.6-9.2-10.8-10.8-18.8l-0.4-2c-0.8-4.4-5.2-9.6-19.6-10 C432.061,93.009,449.661,90.609,462.461,92.209z M505.661,162.609c-3.2,85.2-49.2,172.4-123.6,232.8 c-93.2,75.6-222.8,103.6-364.8,78c-4.8-0.8-8.8-7.2-8.4-11.2c0-0.8,0.4-2.8,5.6-2.8c120.8,4,206.8-22.4,262.8-80.4 c48-49.6,65.2-114.8,79.2-167.2c11.2-41.6,20.8-77.6,41.6-92.8c5.6-4,11.6-7.6,18-10c1.2,0,3.6-0.4,6.4-0.4c8.4,0,12.4,2,12.8,3.6 l0.4,2c1.6,8.4,4,19.2,15.2,24.4c3.2,1.6,6.4,2.4,10,2.4c4.8,0,9.2-1.6,13.2-3.2c4.4-1.6,8.8-3.2,14-3.2c4,0,8,0.8,12.8,2.8 C504.461,145.009,506.061,153.409,505.661,162.609z">
+                  </path>
+                  <path
+                    d="M414.061,136.209c-1.2-1.6-2.8-2.4-4.8-1.2c-8,6-14.8,18-22,38.8c-0.8,2,0.4,4.4,2.4,5.2c0.4,0,0.8,0.4,1.2,0.4 c1.6,0,3.2-1.2,3.6-2.8c6.4-18.8,12.4-30,18.8-34.8C414.861,140.609,415.261,137.809,414.061,136.209z">
+                  </path>
+                  <path
+                    d="M332.061,401.809c-0.8-2.4-3.2-2.8-5.2-1.6c-31.2,18.8-65.6,33.2-102.4,42.4c-2,0.4-3.6,2.8-2.8,4.8c0.4,2,2,3.2,4,3.2 c0.4,0,0.8,0,0.8,0c37.6-9.2,72.8-24,104.4-43.2C332.861,406.209,333.261,403.809,332.061,401.809z">
+                  </path>
+                  <path
+                    d="M384.061,199.009c-2-0.4-4.4,0.8-4.8,2.8c-1.2,4.8-2.8,9.6-4,14.8v0.4c-7.2,27.6-15.6,58.8-28.8,90c-0.8,2,0,4.4,2,5.2 c0.4,0.4,1.2,0.4,1.6,0.4c1.6,0,3.2-0.8,3.6-2.4c13.2-31.6,21.6-63.2,29.2-91.2v-0.4c1.2-4.8,2.8-10,4-14.8 C387.661,201.809,386.061,199.409,384.061,199.009z">
+                  </path>
+
+
+                </svg>
+              </div>
+              <p class="heading__desc">Let your taste buds dance to the exquisite symphony of spices and aromas at Viet
+                - Thai Restaurante.</p>
+            </div><!-- /.heading -->
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+        <div class="row filtered-items-wrap">
+          <div class="col-sm-6 col-md-4 col-lg-4 mix filter-drinks placeholder" style="visibility: hidden;">
+            <div class="menu-item">
+              <div class="menu__item-img">
+                <img width="350" height="235" src="assets/custom-images/menu/1.png" style="object-fit: cover;"
+                  alt="menu img">
+              </div>
+              <div class="menu__item-content">
+                <h4 class="menu__item-title">Cơm Chiên Dương Châu</h4>
+                <p class="menu__item-desc">Casa arroz frito especial com legumes: cenoura, ovo, ervilhas.</p>
+                <span class="menu__item-price">€7.5</span>
+              </div>
+            </div><!-- /.menu-item -->
+          </div><!-- /.col-lg-6 -->
+          <div class="col-sm-6 col-md-4 col-lg-4 mix filter-drinks">
+            <div class="menu-item">
+              <div class="menu__item-img">
+                <img width="350" height="235" src="assets/custom-images/menu/10.png" style="object-fit: cover;"
+                  alt="menu img">
+              </div>
+              <div class="menu__item-content">
+                <h4 class="menu__item-title">Phở Bò</h4>
+                <span class="pricing__tag">Recommended</span>
+                <p class="menu__item-desc">Carne de vaca, massa de arroz e temperos como cebola, gengibre, pimenta,
+                  cravinho, coentro, cebolinha e pimenta preta.</p>
+                <span class="menu__item-price">€10.5</span>
+              </div>
+            </div><!-- /.menu-item -->
+          </div><!-- /.col-lg-6 -->
+          <div class="col-sm-6 col-md-4 col-lg-4 mix filter-drinks placeholder" style="visibility: hidden;">
+            <div class="menu-item">
+              <div class="menu__item-img">
+                <img width="350" height="235" src="assets/custom-images/menu/1.png" style="object-fit: cover;"
+                  alt="menu img">
+              </div>
+              <div class="menu__item-content">
+                <h4 class="menu__item-title">Cơm Chiên Dương Châu</h4>
+                <p class="menu__item-desc">Casa arroz frito especial com legumes: cenoura, ovo, ervilhas.</p>
+                <span class="menu__item-price">€7.5</span>
+              </div>
+            </div><!-- /.menu-item -->
+          </div><!-- /.col-lg-6 -->
+          <div class="col-sm-6 col-md-4 col-lg-4 mix filter-drinks">
+            <div class="menu-item">
+              <div class="menu__item-img">
+                <img width="350" height="235" src="assets/custom-images/menu/1.png" style="object-fit: cover;"
+                  alt="menu img">
+              </div>
+              <div class="menu__item-content">
+                <h4 class="menu__item-title">Cơm Chiên Dương Châu</h4>
+                <p class="menu__item-desc">Casa arroz frito especial com legumes: cenoura, ovo, ervilhas.</p>
+                <span class="menu__item-price">€7.5</span>
+              </div>
+            </div><!-- /.menu-item -->
+          </div><!-- /.col-lg-6 -->
+          <div class="col-sm-6 col-md-4 col-lg-4 mix filter-launch">
+            <div class="menu-item">
+              <div class="menu__item-img"><img width="350" height="235" src="assets/custom-images/menu/2.png"
+                  style="object-fit: cover;" alt="menu img"></div>
+              <div class="menu__item-content">
+                <h4 class="menu__item-title">Mì Xào Rau Cải</h4>
+                <p class="menu__item-desc">Macarrão frito com legumes: cenoura, repolho branco, cebola.
+
+                  <br>
+                  <strong>De frango | Camarão | Carne de bovino</strong>
+                </p>
+                <span class="menu__item-price">€8.5</span>
+              </div>
+            </div><!-- /.menu-item -->
+          </div><!-- /.col-lg-6 -->
+          <div class="col-sm-6 col-md-4 col-lg-4 mix filter-dinner">
+            <div class="menu-item">
+              <div class="menu__item-img"><img width="350" height="235" src="assets/custom-images/menu/3.png"
+                  style="object-fit: cover;" alt="menu img"></div>
+              <div class="menu__item-content">
+                <h4 class="menu__item-title"> Cà Ri Tôm Thai Massaman</h4>
+                <p class="menu__item-desc">Caril Massaman com leite de coco, berinjela, batata e sua escolha camarão.
+                </p>
+                <span class="menu__item-price">€8.5</span>
+              </div>
+            </div><!-- /.menu-item -->
+          </div><!-- /.col-lg-6 -->
+          <div class="col-sm-6 col-md-4 col-lg-4 mix filter-dessert">
+            <div class="menu-item">
+              <div class="menu__item-img"><img width="350" height="235" src="assets/custom-images/menu/4.png"
+                  style="object-fit: cover;" alt="menu img"></div>
+              <div class="menu__item-content">
+                <h4 class="menu__item-title">Cà Ri Gà Massaman</h4>
+                <p class="menu__item-desc"> Caril Massaman com leite de coco, berinjela, batata e sua escolha de frango
+                </p>
+                <span class="menu__item-price">€8.5</span>
+              </div>
+            </div><!-- /.menu-item -->
+          </div><!-- /.col-lg-6 -->
+          <div class="col-sm-6 col-md-4 col-lg-4 mix filter-launch">
+            <div class="menu-item">
+              <div class="menu__item-img"><img width="350" height="235" src="assets/custom-images/menu/5.png"
+                  style="object-fit: cover;" alt="menu img"></div>
+              <div class="menu__item-content">
+                <h4 class="menu__item-title">Cơm Thịt Nướng</h4>
+                <p class="menu__item-desc"> Arroz Quebrado com carne de porco grelhada.</p>
+                <span class="menu__item-price">€9.5</span>
+              </div>
+            </div><!-- /.menu-item -->
+          </div><!-- /.col-lg-6 -->
+          <div class="col-sm-6 col-md-4 col-lg-4 mix filter-dinner">
+            <div class="menu-item">
+              <div class="menu__item-img"><img width="350" height="235" src="assets/custom-images/menu/6.png"
+                  style="object-fit: cover;" alt="menu img"></div>
+              <div class="menu__item-content">
+                <h4 class="menu__item-title">Bò Xào Rau Cải</h4>
+                <span class="pricing__tag">New</span>
+                <p class="menu__item-desc">Carne de bovino frito com legumes: cenoura, repolho branco, cebola.
+
+                  <br>
+                  <strong>E optar pelo arroz frito + €2</strong>
+                </p>
+                <span class="menu__item-price">€8.5</span>
+              </div>
+            </div><!-- /.menu-item -->
+          </div><!-- /.col-lg-6 -->
+          <div class="col-sm-6 col-md-4 col-lg-4 mix filter-dinner">
+            <div class="menu-item">
+              <div class="menu__item-img"><img width="350" height="235" src="assets/custom-images/menu/7.png"
+                  style="object-fit: cover;" alt="menu img"></div>
+              <div class="menu__item-content">
+                <h4 class="menu__item-title">Tôm Xào Rau Cải </h4>
+                <span class="pricing__tag">New</span>
+                <p class="menu__item-desc">Camarão frito com legumes: cenoura, repolho branco, cebola.
+                  <br>
+                  <strong>E optar pelo arroz frito + €2</strong>
+
+                </p>
+                <span class="menu__item-price">€8.5</span>
+              </div>
+            </div><!-- /.menu-item -->
+          </div><!-- /.col-lg-6 -->
+          <div class="col-sm-6 col-md-4 col-lg-4 mix filter-dinner">
+            <div class="menu-item">
+              <div class="menu__item-img"><img width="350" height="235" src="assets/custom-images/menu/8.png"
+                  style="object-fit: cover;" alt="menu img"></div>
+              <div class="menu__item-content">
+                <h4 class="menu__item-title">Gà Xào Rau Cải</h4>
+                <p class="menu__item-desc">Frango frito com legumes: cenoura, repolho branco, cebola <br>
+                  <strong>E optar pelo arroz frito + €2</strong>
+                </p>
+                <span class="menu__item-price">€8.5</span>
+              </div>
+            </div><!-- /.menu-item -->
+          </div><!-- /.col-lg-6 -->
+        
+          <div class="col-sm-6 col-md-4 col-lg-4 mix filter-dinner">
+            <div class="menu-item">
+              <div class="menu__item-img"><img width="350" height="235" src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.15752-9/361091272_1698714143874919_5213149318754822554_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=L2HHvNSGMeUAX-AzwLv&_nc_ht=scontent-arn2-1.xx&oh=03_AdR7KAa2nPl3ZI932pvVhBQTqSaBNVM7FTcEZ-L8fatLaw&oe=64D7A42C"
+                  style="object-fit: cover;" alt="menu img"></div>
+              <div class="menu__item-content">
+                <h4 class="menu__item-title">Gà Xào Chua Ngọt</h4>
+                <p class="menu__item-desc">Frango, páprica, cebola, servido com arroz</p>
+                <span class="menu__item-price">€8.5</span>
+              </div>
+            </div><!-- /.menu-item -->
+          </div><!-- /.col-lg-6 -->
+          <div class="col-sm-6 col-md-4 col-lg-4 mix filter-dinner">
+            <div class="menu-item">
+              <div class="menu__item-img"><img width="350" height="235" src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.15752-9/356972142_6201770439924843_3390003507508915509_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=ob_HjGcvwugAX8VpyVx&_nc_ht=scontent-arn2-1.xx&oh=03_AdTw5DmC2GVL7c2avOpNYGSEPhvV-UbFNPDxwasOlzLWsQ&oe=64D798D4"
+                  style="object-fit: cover;" alt="menu img"></div>
+              <div class="menu__item-content">
+                <h4 class="menu__item-title">Bún Thịt Nướng</h4>
+                <p class="menu__item-desc">Noodles de vermicelli, porco, rolinhos, primavera crocantes, pepino, salada, molho de peixe</p>
+                <span class="menu__item-price">€10.5</span>
+              </div>
+            </div><!-- /.menu-item -->
+          </div><!-- /.col-lg-6 -->
+          <div class="col-sm-6 col-md-4 col-lg-4 mix filter-dinner">
+            <div class="menu-item">
+              <div class="menu__item-img"><img width="350" height="235" src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.15752-9/360166724_222611030243585_7527612291077057253_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=5VJLuUGakp0AX8aNAVd&_nc_ht=scontent-arn2-1.xx&oh=03_AdQYkPZ-LzerKf5QbnbGdHxt0D40JMXL3p2WGx7NAe7VZQ&oe=64D7AD58"
+                  style="object-fit: cover;" alt="menu img"></div>
+              <div class="menu__item-content">
+                <h4 class="menu__item-title">Tom Yum Soup</h4>
+                <p class="menu__item-desc">Camarão, lulas, cogumelos, limão e sopa tomyum, servido com arroz</p>
+                <span class="menu__item-price">€8.5</span>
+              </div>
+            </div><!-- /.menu-item -->
+          </div><!-- /.col-lg-6 -->
+          <div class="col-sm-6 col-md-4 col-lg-4 mix filter-dinner">
+            <div class="menu-item">
+              <div class="menu__item-img"><img width="350" height="235" src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.15752-9/346141890_2230151333843493_5027913919961707849_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=j5a8tOlqnxEAX_k1Wvk&_nc_ht=scontent-arn2-1.xx&oh=03_AdTFZ-tI-eHsKslJNgFEn6mfmWl9LwChjIDlqEZs0O--LA&oe=64D790D2"
+                  style="object-fit: cover;" alt="menu img"></div>
+              <div class="menu__item-content">
+                <h4 class="menu__item-title">Pad Thai</h4>
+                <p class="menu__item-desc">Macarrão de arroz, camarão, ovos, broto de feijão, amendoim e molho de tamarindo</p>
+                <span class="menu__item-price">€8.5</span>
+              </div>
+            </div><!-- /.menu-item -->
+          </div><!-- /.col-lg-6 -->
+          <div class="col-sm-6 col-md-4 col-lg-4 mix filter-dinner">
+            <div class="menu-item">
+              <div class="menu__item-img"><img width="350" height="235" src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.15752-9/352256954_577328251267960_7841970837364177145_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=X5_sfAuHfUgAX8UrjyO&_nc_ht=scontent-arn2-1.xx&oh=03_AdRpEgqP1506_RPe5N6gZc3ewLlRwm7eXc1E_O3_HkSRAw&oe=64D79908"
+                  style="object-fit: cover;" alt="menu img"></div>
+              <div class="menu__item-content">
+                <h4 class="menu__item-title">Cánh gà chiên nước mắm</h4>
+                <p class="menu__item-desc">Asinhas de frango, molho de peixe, saladas e servidas com arroz</p>
+                <span class="menu__item-price">€8.5</span>
+              </div>
+            </div><!-- /.menu-item -->
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row  -->
+      </div><!-- /.container -->
+
+       <!-- Beverages section -->
+      <div class="container" style="margin-top: 40px; display: flex; align-items: center; flex-direction: column;">
+        <div class="row" style="width: 100%;">
+          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3" style="width: 100%;">
+            <div class="heading text-center mb-30" >
+              <!-- <span class="heading__subtitle">Taste The Best</span> -->
+              <h2 class="heading__title" style="width: 100%;">Our Beverages</h2>
+              <div class="heading__icon">
+                <svg fill="#000000" height="28px" width="28px" version="1.1" id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 512.511 512.511" xml:space="preserve" stroke="2">
+                  <path
+                    d="M506.861,134.209c1.6-6,2.4-26-24-43.2c5.2-17.6,7.6-44.4-2.8-67.2c-0.8-2-3.2-2.8-5.2-2l-31.2,11.6 c-1.2,0.4-2,1.2-2.4,2.4c-0.4,1.2,0,2.4,0.4,3.6c6.4,9.2,16.4,26.8,16.8,44.4c-16.8-1.2-39.2,3.2-47.2,18 c-6.8,2.8-13.2,6.4-19.2,10.8c-23.6,17.2-33.2,54.4-44.8,97.6c-28,105.6-66.8,250.8-333.6,241.6c-9.2-0.4-13.2,4.8-13.6,10 c-0.8,8.4,6.4,18.4,15.2,20c34.8,6,68.8,9.2,101.6,9.2c104,0,197.2-30.4,269.6-89.2c76.4-62,123.6-151.2,126-238.8 C512.861,152.609,510.861,143.009,506.861,134.209z M462.461,92.209c1.2,0,2.4,0,3.2-0.8c0.8-0.8,1.2-1.6,1.6-2.8 c1.2-18.4-7.2-36.4-15.6-49.2l22.8-8.4c8.4,21.2,5.6,46,0.4,60.8c-0.8,1.6,0,3.6,1.6,4.8c20,12,23.2,25.2,23.6,32.4 c-4-1.6-8-2-12-2c-6.8,0-12,2-16.8,4c-6,2.4-11.2,4-16.8,1.2c-7.6-3.6-9.2-10.8-10.8-18.8l-0.4-2c-0.8-4.4-5.2-9.6-19.6-10 C432.061,93.009,449.661,90.609,462.461,92.209z M505.661,162.609c-3.2,85.2-49.2,172.4-123.6,232.8 c-93.2,75.6-222.8,103.6-364.8,78c-4.8-0.8-8.8-7.2-8.4-11.2c0-0.8,0.4-2.8,5.6-2.8c120.8,4,206.8-22.4,262.8-80.4 c48-49.6,65.2-114.8,79.2-167.2c11.2-41.6,20.8-77.6,41.6-92.8c5.6-4,11.6-7.6,18-10c1.2,0,3.6-0.4,6.4-0.4c8.4,0,12.4,2,12.8,3.6 l0.4,2c1.6,8.4,4,19.2,15.2,24.4c3.2,1.6,6.4,2.4,10,2.4c4.8,0,9.2-1.6,13.2-3.2c4.4-1.6,8.8-3.2,14-3.2c4,0,8,0.8,12.8,2.8 C504.461,145.009,506.061,153.409,505.661,162.609z">
+                  </path>
+                  <path
+                    d="M414.061,136.209c-1.2-1.6-2.8-2.4-4.8-1.2c-8,6-14.8,18-22,38.8c-0.8,2,0.4,4.4,2.4,5.2c0.4,0,0.8,0.4,1.2,0.4 c1.6,0,3.2-1.2,3.6-2.8c6.4-18.8,12.4-30,18.8-34.8C414.861,140.609,415.261,137.809,414.061,136.209z">
+                  </path>
+                  <path
+                    d="M332.061,401.809c-0.8-2.4-3.2-2.8-5.2-1.6c-31.2,18.8-65.6,33.2-102.4,42.4c-2,0.4-3.6,2.8-2.8,4.8c0.4,2,2,3.2,4,3.2 c0.4,0,0.8,0,0.8,0c37.6-9.2,72.8-24,104.4-43.2C332.861,406.209,333.261,403.809,332.061,401.809z">
+                  </path>
+                  <path
+                    d="M384.061,199.009c-2-0.4-4.4,0.8-4.8,2.8c-1.2,4.8-2.8,9.6-4,14.8v0.4c-7.2,27.6-15.6,58.8-28.8,90c-0.8,2,0,4.4,2,5.2 c0.4,0.4,1.2,0.4,1.6,0.4c1.6,0,3.2-0.8,3.6-2.4c13.2-31.6,21.6-63.2,29.2-91.2v-0.4c1.2-4.8,2.8-10,4-14.8 C387.661,201.809,386.061,199.409,384.061,199.009z">
+                  </path>
+                </svg>
+                <p class="heading__desc">Aprecie o sabor único !</p>
+              
+              </div>
+              <!-- <p class="heading__desc">Let your taste buds dance to the exquisite symphony of spices and aromas at Viet
+                - Thai Restaurante.</p> -->
+            </div><!-- /.heading -->
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+        <img style="width: 100%;" src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.15752-9/360901879_193176213733211_1848301378797404146_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_ohc=N6N8Gy-N5LoAX9MvVYk&_nc_ht=scontent-arn2-1.xx&oh=03_AdTw9I-TwyCQnHJpz93sg-OUsxlvjbl6N4uzQh9JWlKc7g&oe=64D75DBE" alt="beverages">
+      </div><!-- /.container -->
+
+      <!-- Starter section -->
+      <div class="container" style="margin-top: 60px; display: flex; align-items: center; flex-direction: column;">
+        <div class="row" style="width: 100%;">
+          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3" style="width: 100%;">
+            <div class="heading text-center mb-30" >
+              <!-- <span class="heading__subtitle">Taste The Best</span> -->
+              <h2 class="heading__title" style="width: 100%;">Ideal Starter</h2>
+              <div class="heading__icon">
+                <svg fill="#000000" height="28px" width="28px" version="1.1" id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 512.511 512.511" xml:space="preserve" stroke="2">
+                  <path
+                    d="M506.861,134.209c1.6-6,2.4-26-24-43.2c5.2-17.6,7.6-44.4-2.8-67.2c-0.8-2-3.2-2.8-5.2-2l-31.2,11.6 c-1.2,0.4-2,1.2-2.4,2.4c-0.4,1.2,0,2.4,0.4,3.6c6.4,9.2,16.4,26.8,16.8,44.4c-16.8-1.2-39.2,3.2-47.2,18 c-6.8,2.8-13.2,6.4-19.2,10.8c-23.6,17.2-33.2,54.4-44.8,97.6c-28,105.6-66.8,250.8-333.6,241.6c-9.2-0.4-13.2,4.8-13.6,10 c-0.8,8.4,6.4,18.4,15.2,20c34.8,6,68.8,9.2,101.6,9.2c104,0,197.2-30.4,269.6-89.2c76.4-62,123.6-151.2,126-238.8 C512.861,152.609,510.861,143.009,506.861,134.209z M462.461,92.209c1.2,0,2.4,0,3.2-0.8c0.8-0.8,1.2-1.6,1.6-2.8 c1.2-18.4-7.2-36.4-15.6-49.2l22.8-8.4c8.4,21.2,5.6,46,0.4,60.8c-0.8,1.6,0,3.6,1.6,4.8c20,12,23.2,25.2,23.6,32.4 c-4-1.6-8-2-12-2c-6.8,0-12,2-16.8,4c-6,2.4-11.2,4-16.8,1.2c-7.6-3.6-9.2-10.8-10.8-18.8l-0.4-2c-0.8-4.4-5.2-9.6-19.6-10 C432.061,93.009,449.661,90.609,462.461,92.209z M505.661,162.609c-3.2,85.2-49.2,172.4-123.6,232.8 c-93.2,75.6-222.8,103.6-364.8,78c-4.8-0.8-8.8-7.2-8.4-11.2c0-0.8,0.4-2.8,5.6-2.8c120.8,4,206.8-22.4,262.8-80.4 c48-49.6,65.2-114.8,79.2-167.2c11.2-41.6,20.8-77.6,41.6-92.8c5.6-4,11.6-7.6,18-10c1.2,0,3.6-0.4,6.4-0.4c8.4,0,12.4,2,12.8,3.6 l0.4,2c1.6,8.4,4,19.2,15.2,24.4c3.2,1.6,6.4,2.4,10,2.4c4.8,0,9.2-1.6,13.2-3.2c4.4-1.6,8.8-3.2,14-3.2c4,0,8,0.8,12.8,2.8 C504.461,145.009,506.061,153.409,505.661,162.609z">
+                  </path>
+                  <path
+                    d="M414.061,136.209c-1.2-1.6-2.8-2.4-4.8-1.2c-8,6-14.8,18-22,38.8c-0.8,2,0.4,4.4,2.4,5.2c0.4,0,0.8,0.4,1.2,0.4 c1.6,0,3.2-1.2,3.6-2.8c6.4-18.8,12.4-30,18.8-34.8C414.861,140.609,415.261,137.809,414.061,136.209z">
+                  </path>
+                  <path
+                    d="M332.061,401.809c-0.8-2.4-3.2-2.8-5.2-1.6c-31.2,18.8-65.6,33.2-102.4,42.4c-2,0.4-3.6,2.8-2.8,4.8c0.4,2,2,3.2,4,3.2 c0.4,0,0.8,0,0.8,0c37.6-9.2,72.8-24,104.4-43.2C332.861,406.209,333.261,403.809,332.061,401.809z">
+                  </path>
+                  <path
+                    d="M384.061,199.009c-2-0.4-4.4,0.8-4.8,2.8c-1.2,4.8-2.8,9.6-4,14.8v0.4c-7.2,27.6-15.6,58.8-28.8,90c-0.8,2,0,4.4,2,5.2 c0.4,0.4,1.2,0.4,1.6,0.4c1.6,0,3.2-0.8,3.6-2.4c13.2-31.6,21.6-63.2,29.2-91.2v-0.4c1.2-4.8,2.8-10,4-14.8 C387.661,201.809,386.061,199.409,384.061,199.009z">
+                  </path>
+                </svg>
+                <p class="heading__desc">Indispensable start !</p>
+              </div>
+              <!-- <p class="heading__desc">Let your taste buds dance to the exquisite symphony of spices and aromas at Viet
+                - Thai Restaurante.</p> -->
+            </div><!-- /.heading -->
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+        <img style="width: 100%;" src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.15752-9/360032926_248922007915277_4001937288538320768_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_ohc=7npPFUqjSL4AX-fAsaR&_nc_ht=scontent-arn2-1.xx&oh=03_AdQBNUW_YVFdm3OcdW-pKdkjXf7CMlKxYKWJVn80YtBDAA&oe=64D76F98" alt="Starter">
+
+
+      </div><!-- /.container -->
+
+      <!-- Dessert section -->
+      <div class="container" style="margin-top: 60px; display: flex; align-items: center; flex-direction: column;">
+        <div class="row" style="width: 100%;">
+          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3" style="width: 100%;">
+            <div class="heading text-center mb-30" >
+              <!-- <span class="heading__subtitle">Taste The Best</span> -->
+              <h2 class="heading__title" style="width: 100%;">Dessert</h2>
+              <div class="heading__icon">
+                <svg fill="#000000" height="28px" width="28px" version="1.1" id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 512.511 512.511" xml:space="preserve" stroke="2">
+                  <path
+                    d="M506.861,134.209c1.6-6,2.4-26-24-43.2c5.2-17.6,7.6-44.4-2.8-67.2c-0.8-2-3.2-2.8-5.2-2l-31.2,11.6 c-1.2,0.4-2,1.2-2.4,2.4c-0.4,1.2,0,2.4,0.4,3.6c6.4,9.2,16.4,26.8,16.8,44.4c-16.8-1.2-39.2,3.2-47.2,18 c-6.8,2.8-13.2,6.4-19.2,10.8c-23.6,17.2-33.2,54.4-44.8,97.6c-28,105.6-66.8,250.8-333.6,241.6c-9.2-0.4-13.2,4.8-13.6,10 c-0.8,8.4,6.4,18.4,15.2,20c34.8,6,68.8,9.2,101.6,9.2c104,0,197.2-30.4,269.6-89.2c76.4-62,123.6-151.2,126-238.8 C512.861,152.609,510.861,143.009,506.861,134.209z M462.461,92.209c1.2,0,2.4,0,3.2-0.8c0.8-0.8,1.2-1.6,1.6-2.8 c1.2-18.4-7.2-36.4-15.6-49.2l22.8-8.4c8.4,21.2,5.6,46,0.4,60.8c-0.8,1.6,0,3.6,1.6,4.8c20,12,23.2,25.2,23.6,32.4 c-4-1.6-8-2-12-2c-6.8,0-12,2-16.8,4c-6,2.4-11.2,4-16.8,1.2c-7.6-3.6-9.2-10.8-10.8-18.8l-0.4-2c-0.8-4.4-5.2-9.6-19.6-10 C432.061,93.009,449.661,90.609,462.461,92.209z M505.661,162.609c-3.2,85.2-49.2,172.4-123.6,232.8 c-93.2,75.6-222.8,103.6-364.8,78c-4.8-0.8-8.8-7.2-8.4-11.2c0-0.8,0.4-2.8,5.6-2.8c120.8,4,206.8-22.4,262.8-80.4 c48-49.6,65.2-114.8,79.2-167.2c11.2-41.6,20.8-77.6,41.6-92.8c5.6-4,11.6-7.6,18-10c1.2,0,3.6-0.4,6.4-0.4c8.4,0,12.4,2,12.8,3.6 l0.4,2c1.6,8.4,4,19.2,15.2,24.4c3.2,1.6,6.4,2.4,10,2.4c4.8,0,9.2-1.6,13.2-3.2c4.4-1.6,8.8-3.2,14-3.2c4,0,8,0.8,12.8,2.8 C504.461,145.009,506.061,153.409,505.661,162.609z">
+                  </path>
+                  <path
+                    d="M414.061,136.209c-1.2-1.6-2.8-2.4-4.8-1.2c-8,6-14.8,18-22,38.8c-0.8,2,0.4,4.4,2.4,5.2c0.4,0,0.8,0.4,1.2,0.4 c1.6,0,3.2-1.2,3.6-2.8c6.4-18.8,12.4-30,18.8-34.8C414.861,140.609,415.261,137.809,414.061,136.209z">
+                  </path>
+                  <path
+                    d="M332.061,401.809c-0.8-2.4-3.2-2.8-5.2-1.6c-31.2,18.8-65.6,33.2-102.4,42.4c-2,0.4-3.6,2.8-2.8,4.8c0.4,2,2,3.2,4,3.2 c0.4,0,0.8,0,0.8,0c37.6-9.2,72.8-24,104.4-43.2C332.861,406.209,333.261,403.809,332.061,401.809z">
+                  </path>
+                  <path
+                    d="M384.061,199.009c-2-0.4-4.4,0.8-4.8,2.8c-1.2,4.8-2.8,9.6-4,14.8v0.4c-7.2,27.6-15.6,58.8-28.8,90c-0.8,2,0,4.4,2,5.2 c0.4,0.4,1.2,0.4,1.6,0.4c1.6,0,3.2-0.8,3.6-2.4c13.2-31.6,21.6-63.2,29.2-91.2v-0.4c1.2-4.8,2.8-10,4-14.8 C387.661,201.809,386.061,199.409,384.061,199.009z">
+                  </path>
+                </svg>
+                <!-- <p class="heading__desc">Indispensable start !</p> -->
+              </div>
+              <!-- <p class="heading__desc">Let your taste buds dance to the exquisite symphony of spices and aromas at Viet
+                - Thai Restaurante.</p> -->
+            </div><!-- /.heading -->
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+        <img style="width: 100%;" src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.15752-9/361079898_656539406090106_406078618962436147_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=dfA-_c4dIpQAX--eCAa&_nc_ht=scontent-arn2-1.xx&oh=03_AdSljnascbn7_SVjZ8Q6SnZO6wS9wI6jPfkk4YGecn1qwA&oe=64D768C3" alt="Dessert">
+
+
+      </div><!-- /.container -->
+
+      <!-- Cocktail section -->
+      <div class="container" style="margin-top: 60px; display: flex; align-items: center; flex-direction: column;">
+        <div class="row" style="width: 100%;">
+          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3" style="width: 100%;">
+            <div class="heading text-center mb-30" >
+              <!-- <span class="heading__subtitle">Taste The Best</span> -->
+              <h2 class="heading__title" style="width: 100%;">Cocktails</h2>
+              <div class="heading__icon">
+                <svg fill="#000000" height="28px" width="28px" version="1.1" id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 512.511 512.511" xml:space="preserve" stroke="2">
+                  <path
+                    d="M506.861,134.209c1.6-6,2.4-26-24-43.2c5.2-17.6,7.6-44.4-2.8-67.2c-0.8-2-3.2-2.8-5.2-2l-31.2,11.6 c-1.2,0.4-2,1.2-2.4,2.4c-0.4,1.2,0,2.4,0.4,3.6c6.4,9.2,16.4,26.8,16.8,44.4c-16.8-1.2-39.2,3.2-47.2,18 c-6.8,2.8-13.2,6.4-19.2,10.8c-23.6,17.2-33.2,54.4-44.8,97.6c-28,105.6-66.8,250.8-333.6,241.6c-9.2-0.4-13.2,4.8-13.6,10 c-0.8,8.4,6.4,18.4,15.2,20c34.8,6,68.8,9.2,101.6,9.2c104,0,197.2-30.4,269.6-89.2c76.4-62,123.6-151.2,126-238.8 C512.861,152.609,510.861,143.009,506.861,134.209z M462.461,92.209c1.2,0,2.4,0,3.2-0.8c0.8-0.8,1.2-1.6,1.6-2.8 c1.2-18.4-7.2-36.4-15.6-49.2l22.8-8.4c8.4,21.2,5.6,46,0.4,60.8c-0.8,1.6,0,3.6,1.6,4.8c20,12,23.2,25.2,23.6,32.4 c-4-1.6-8-2-12-2c-6.8,0-12,2-16.8,4c-6,2.4-11.2,4-16.8,1.2c-7.6-3.6-9.2-10.8-10.8-18.8l-0.4-2c-0.8-4.4-5.2-9.6-19.6-10 C432.061,93.009,449.661,90.609,462.461,92.209z M505.661,162.609c-3.2,85.2-49.2,172.4-123.6,232.8 c-93.2,75.6-222.8,103.6-364.8,78c-4.8-0.8-8.8-7.2-8.4-11.2c0-0.8,0.4-2.8,5.6-2.8c120.8,4,206.8-22.4,262.8-80.4 c48-49.6,65.2-114.8,79.2-167.2c11.2-41.6,20.8-77.6,41.6-92.8c5.6-4,11.6-7.6,18-10c1.2,0,3.6-0.4,6.4-0.4c8.4,0,12.4,2,12.8,3.6 l0.4,2c1.6,8.4,4,19.2,15.2,24.4c3.2,1.6,6.4,2.4,10,2.4c4.8,0,9.2-1.6,13.2-3.2c4.4-1.6,8.8-3.2,14-3.2c4,0,8,0.8,12.8,2.8 C504.461,145.009,506.061,153.409,505.661,162.609z">
+                  </path>
+                  <path
+                    d="M414.061,136.209c-1.2-1.6-2.8-2.4-4.8-1.2c-8,6-14.8,18-22,38.8c-0.8,2,0.4,4.4,2.4,5.2c0.4,0,0.8,0.4,1.2,0.4 c1.6,0,3.2-1.2,3.6-2.8c6.4-18.8,12.4-30,18.8-34.8C414.861,140.609,415.261,137.809,414.061,136.209z">
+                  </path>
+                  <path
+                    d="M332.061,401.809c-0.8-2.4-3.2-2.8-5.2-1.6c-31.2,18.8-65.6,33.2-102.4,42.4c-2,0.4-3.6,2.8-2.8,4.8c0.4,2,2,3.2,4,3.2 c0.4,0,0.8,0,0.8,0c37.6-9.2,72.8-24,104.4-43.2C332.861,406.209,333.261,403.809,332.061,401.809z">
+                  </path>
+                  <path
+                    d="M384.061,199.009c-2-0.4-4.4,0.8-4.8,2.8c-1.2,4.8-2.8,9.6-4,14.8v0.4c-7.2,27.6-15.6,58.8-28.8,90c-0.8,2,0,4.4,2,5.2 c0.4,0.4,1.2,0.4,1.6,0.4c1.6,0,3.2-0.8,3.6-2.4c13.2-31.6,21.6-63.2,29.2-91.2v-0.4c1.2-4.8,2.8-10,4-14.8 C387.661,201.809,386.061,199.409,384.061,199.009z">
+                  </path>
+                </svg>
+                <!-- <p class="heading__desc">Indispensable start !</p> -->
+              </div>
+              <!-- <p class="heading__desc">Let your taste buds dance to the exquisite symphony of spices and aromas at Viet
+                - Thai Restaurante.</p> -->
+            </div><!-- /.heading -->
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+        <img style="width: 100%;" src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.15752-9/356422736_782487810276936_1324384059769595694_n.png?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=OVrd5a6JQVwAX_SZcrY&_nc_ht=scontent-arn2-1.xx&oh=03_AdRjh2MHgsxhFTcV_CBbFa0WEhNjgOB3yvyclH1UczDfMQ&oe=64D767E5" alt="Cocktails">
+
+
+      </div><!-- /.container -->
+
+    </section><!-- /.menu layout 3 -->
+    <!-- ========================
+       Text Banner layout 1
+    =========================== -->
+    <section id="textBanner"
+      class="text-banner text-banner-layout1 text-center bg-overlay bg-overlay-gradient bg-parallax">
+      <div class="bg-img"><img src="assets/custom-images/4.png" alt="background"></div>
+      <svg class="divider-shape" xmlns="http://www.w3.org/2000/svg" width="142" height="17" viewBox="0 0 142 17">
+        <path
+          d="M800,600V583c8.782,15.985,46.811,11.315,56,12a35.721,35.721,0,0,1,15,5m-71,0V583c-8.782,15.985-46.811,11.315-56,12a35.717,35.717,0,0,0-15,5"
+          transform="translate(-729 -583)"></path>
+      </svg>
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col-sm-12 col-md-12 col-lg-12">
+            <span class="banner__subtitle">Book Your Table</span>
+            <h2 class="banner__title">Make A Reservation</h2>
+          </div> -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.textBanner layout 1 -->
+
+    <!-- ========================
+      Reservation
+    =========================== -->
+    <!-- <section id="reservation" class="reservation">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+            <div class="heading text-center mb-30">
+              <p class="heading__desc">You can book a table online easily in just a minute. Reservations are for lunch
+                and dinner, check the availability of your table & book it now!</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-8 offset-lg-2">
+            <form>
+              <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <select class="form-control">
+                      <option value="2">2 people</option>
+                      <option value="3">3 people</option>
+                      <option value="4">4 people</option>
+                      <option value="5">5 people</option>
+                      <option value="6">6 people</option>
+                      <option value="7">7 people</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <select class="form-control">
+                      <option value="23">March 23, 2020</option>
+                      <option value="24">March 24, 2020</option>
+                      <option value="25">March 25, 2020</option>
+                      <option value="26">March 26, 2020</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <select class="form-control">
+                      <option value="8">8:00 PM</option>
+                      <option value="9">9:00 PM</option>
+                      <option value="10">10:00 PM</option>
+                      <option value="11">11:00 PM</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <button type="submit" class="btn btn__primary btn__block">Find A Table</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- ========================
+      Footer
+    ========================== -->
+    <footer id="footer" class="footer footer-layout1 text-center bg-dark">
+      <div class="footer-inner">
+        <div class="container">
+          <div class="footer-top">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12 position-static">
+                <svg class="footer__divider-shape" xmlns="http://www.w3.org/2000/svg" width="22" height="61"
+                  viewBox="0 0 22 61">
+                  <path
+                    d="M799,769h2v61h-2V769Zm8,24.8a0.969,0.969,0,0,0-1.911,0,3.012,3.012,0,0,1-.883,2.16,4.486,4.486,0,0,0,0,6.136,3.083,3.083,0,0,1,0,4.32,4.486,4.486,0,0,0,0,6.136,3.088,3.088,0,0,1,0,4.325,4.5,4.5,0,0,0,0,6.142,3.014,3.014,0,0,1,.884,2.163,0.969,0.969,0,0,0,1.911,0,4.414,4.414,0,0,0-1.213-3.07,3.091,3.091,0,0,1,0-4.328,4.491,4.491,0,0,0,0-6.14,3.08,3.08,0,0,1,0-4.319,4.488,4.488,0,0,0,0-6.137,3.081,3.081,0,0,1,0-4.32A4.407,4.407,0,0,0,807,793.8Zm0-20a0.969,0.969,0,0,0-1.911,0,3.014,3.014,0,0,1-.883,2.16,4.486,4.486,0,0,0,0,6.136,3.083,3.083,0,0,1,0,4.32,4.488,4.488,0,0,0,0,6.137,3.087,3.087,0,0,1,0,4.324,4.5,4.5,0,0,0,0,6.142,3.014,3.014,0,0,1,.884,2.163,0.969,0.969,0,0,0,1.911,0,4.414,4.414,0,0,0-1.213-3.07,3.089,3.089,0,0,1,0-4.327,4.491,4.491,0,0,0,0-6.14,3.081,3.081,0,0,1,0-4.32,4.488,4.488,0,0,0,0-6.137,3.081,3.081,0,0,1,0-4.32A4.409,4.409,0,0,0,807,773.8ZM793,793.8a0.969,0.969,0,0,1,1.911,0,3.012,3.012,0,0,0,.883,2.16,4.486,4.486,0,0,1,0,6.136,3.083,3.083,0,0,0,0,4.32,4.486,4.486,0,0,1,0,6.136,3.088,3.088,0,0,0,0,4.325,4.5,4.5,0,0,1,0,6.142,3.014,3.014,0,0,0-.884,2.163,0.969,0.969,0,0,1-1.911,0,4.414,4.414,0,0,1,1.213-3.07,3.091,3.091,0,0,0,0-4.328,4.491,4.491,0,0,1,0-6.14,3.08,3.08,0,0,0,0-4.319,4.488,4.488,0,0,1,0-6.137,3.081,3.081,0,0,0,0-4.32A4.407,4.407,0,0,1,793,793.8Zm0-20a0.969,0.969,0,0,1,1.911,0,3.014,3.014,0,0,0,.883,2.16,4.486,4.486,0,0,1,0,6.136,3.083,3.083,0,0,0,0,4.32,4.488,4.488,0,0,1,0,6.137,3.087,3.087,0,0,0,0,4.324,4.5,4.5,0,0,1,0,6.142,3.014,3.014,0,0,0-.884,2.163,0.969,0.969,0,0,1-1.911,0,4.414,4.414,0,0,1,1.213-3.07,3.089,3.089,0,0,0,0-4.327,4.491,4.491,0,0,1,0-6.14,3.081,3.081,0,0,0,0-4.32,4.488,4.488,0,0,1,0-6.137,3.081,3.081,0,0,0,0-4.32A4.409,4.409,0,0,1,793,773.8Zm-4,5.2h2v41h-2V779Zm20,0h2v41h-2V779Z"
+                    transform="translate(-789 -769)"></path>
+                </svg>
+              </div>
+              <!-- /.col-lg-12 -->
+              <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="contact-box">
+                  <h6 class="contact__box-title">Our Address</h6>
+                  <ul class="contact__box-list list-unstyled">
+                    <li>
+                      Estr. de Benfica 439 1500-078 Lisbon, Portugal.
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.contact-box -->
+              </div>
+              <!-- /.col-lg-4 -->
+              <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="contact-box">
+                  <h6 class="contact__box-title">Opening Hours</h6>
+                  <ul class="contact__box-list list-unstyled">
+                    <li>Week days: 12 PM - 3 PM , 7 PM - 10 PM</li>
+                    <li>Sunday: 12 PM - 3 PM</li>
+                  </ul>
+                </div>
+                <!-- /.contact-box -->
+              </div>
+              <!-- /.col-lg-4 -->
+              <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="contact-box">
+                  <h6 class="contact__box-title">Private Dinning</h6>
+                  <ul class="contact__box-list list-unstyled">
+                    <li>
+                      <span>Phone:</span><a href="tel:020101236547"> +351 967 856 581</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.contact-box -->
+              </div>
+              <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.footer-top -->
+          <div class="footer-middle">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12 position-static">
+                <div class="footer__logo-wrap text-center">
+                  <img src="assets/custom-images/logo-trang.png" width="300px" height="115px" alt="logo"
+                    style="object-fit: contain;" class="footer__logo" />
+                </div>
+              </div>
+              <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+                <p class="mb-20">
+                  Step into our welcoming and contemporary ambiance, where you'll find a warm and friendly atmosphere
+                  that reflects our dedication to exceptional hospitality. Our attentive staff is here to guide you
+                  through your culinary journey, providing personalized service and ensuring your dining experience
+                  exceeds your expectations.
+                </p>
+                <!-- <a href="reservation.html" class="btn btn__primary btn__bordered btn__lg">Book Your Table Now!</a> -->
+              </div>
+              <!-- /.col-lg-6 -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.footer-middle -->
+        </div>
+        <!-- /.container -->
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="footer__copyright mb-30">
+                  <span>&copy; Viet-Thai with Love </span>
+                  <!-- <a href="http://themeforest.net/user/7oroof" class="color-theme">7oroof.com</a> -->
+                </div>
+                <ul class="social__icons social__icons-white justify-content-center">
+                  <li>
+                    <a href="https://www.facebook.com/VietThaiRestaurante" target="_blank" aria-label="fb"><i
+                        class="fa fa-facebook"></i></a>
+                  </li>
+
+                </ul>
+                <!-- /.social__icons -->
+              </div>
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container -->
+          <svg class="footer__divider-shape-bottom" xmlns="http://www.w3.org/2000/svg" width="142" height="17"
+            viewBox="0 0 142 17">
+            <path
+              d="M800,600V583c8.782,15.985,46.811,11.315,56,12a35.721,35.721,0,0,1,15,5m-71,0V583c-8.782,15.985-46.811,11.315-56,12a35.717,35.717,0,0,0-15,5"
+              transform="translate(-729 -583)"></path>
+          </svg>
+        </div>
+        <!-- /.Footer-bottom -->
+      </div>
+      <!-- /.Footer-inner -->
+    </footer>
+    <!-- /.Footer -->
+
+    <button id="scrollTopBtn"><i class="fa fa-angle-up"></i></button>
+
+    <div class="search-popup">
+      <i class="fa fa-times close-search"></i>
+      <form class="module__search-form">
+        <input type="text" class="search__input" placeholder="Type Words Then Enter">
+        <!-- <button class="module__search-btn"><i class="fa fa-search"></i></button> -->
+      </form>
+    </div><!-- /.search-popup -->
+
+  </div>
+  <!-- /.wrapper -->
+
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
